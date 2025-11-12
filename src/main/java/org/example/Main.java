@@ -12,6 +12,7 @@ public class Main {
 //        System.out.println("Kecepatan mobil\t:" + mobil.kecepatan);
 //        mobil.kecepatan = 100;
 
+
 //        PAKAI GETTER & SETTER
         System.out.println("Jenis mobil\t\t:" + mobil.getJenis());
 System.out.println("Warna mobil\t\t:" + mobil.getWarna());

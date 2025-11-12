@@ -52,3 +52,4 @@ public class Kendaraan {
         System.out.println("Berjalan maju");
     }
 }
+
