@@ -51,5 +51,11 @@ public class Kendaraan {
     void majuKedepan(){
         System.out.println("Berjalan maju");
     }
+
+    void info(){
+        System.out.println("Jenis mobil\t\t:" + jenis);
+        System.out.println("Warna mobil\t\t:" +warna);
+        System.out.println("Kecepatan mobil\t:" + kecepatan + "\n");
+    }
 }
 

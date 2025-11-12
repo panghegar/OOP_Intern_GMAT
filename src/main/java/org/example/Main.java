@@ -5,6 +5,8 @@ public class Main {
 
 //        BUAT OBJECT
         Kendaraan mobil = new Kendaraan("Mobil", "Hitam", 80);
+//        DARI SUBCLASS
+        Mobil BMWPutih = new Mobil("Putih", 120, 4, 4);
 
 
 //        System.out.println("Jenis mobil\t\t:" + mobil.jenis);
@@ -14,16 +16,22 @@ public class Main {
 
 
 //        PAKAI GETTER & SETTER
-        System.out.println("Jenis mobil\t\t:" + mobil.getJenis());
-System.out.println("Warna mobil\t\t:" + mobil.getWarna());
-        System.out.println("Kecepatan mobil\t:" + mobil.getKecepatan());
+//        System.out.println("Jenis mobil\t\t:" + mobil.getJenis());
+//        System.out.println("Warna mobil\t\t:" + mobil.getWarna());
+//        System.out.println("Kecepatan mobil\t:" + mobil.getKecepatan());
+//
+//        mobil.setKecepatan(100);
+//
+//        System.out.println("\nPerubahan");
+//        System.out.println("Kecepatan baru \t: " + mobil.getKecepatan());
+//
+//        mobil.nyalakanMesin();
+//        mobil.majuKedepan();
 
-        mobil.setKecepatan(100);
-
-        System.out.println("\nPerubahan");
-        System.out.println("Kecepatan baru \t: " + mobil.getKecepatan());
-
-        mobil.nyalakanMesin();
-        mobil.majuKedepan();
+//        INHERITENCE
+        BMWPutih.info(); //SUPERCLASS
+        BMWPutih.nyalakanMesin(); //SUPERCLASS
+        BMWPutih.menjalankanRoda(); //SUBCLASS
+        BMWPutih.bukaPintu(); //SUBCLASS
     }
 }
