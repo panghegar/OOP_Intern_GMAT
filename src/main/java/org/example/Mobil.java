@@ -17,4 +17,10 @@ public class Mobil extends Kendaraan{
     public void menjalankanRoda(){
         System.out.println("Menjalankan " + jmlRoda + " roda");
     }
+
+//    OVERRIDING
+    @Override
+    void majuKedepan(){
+        System.out.println("Mobil melaju dengan kecepatan tinggi");
+    }
 }

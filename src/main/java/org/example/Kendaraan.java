@@ -51,6 +51,14 @@ public class Kendaraan {
     void majuKedepan(){
         System.out.println("Berjalan maju");
     }
+//  OVERLOADING
+    void majuKedepan(int jarak) {
+        System.out.println(jenis + " maju sejauh " + jarak + " meter");
+    }
+
+    void majuKedepan(int jarak, int detik) {
+        System.out.println(jenis + " maju sejauh " + jarak + " meter dalam " + detik + " detik");
+    }
 
     void info(){
         System.out.println("Jenis mobil\t\t:" + jenis);

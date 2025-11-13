@@ -5,9 +5,14 @@ public class Main {
 
 //        BUAT OBJECT
         Kendaraan mobil = new Kendaraan("Mobil", "Hitam", 80);
-//        DARI SUBCLASS
+//        OBJEK DARI SUBCLASS
         Mobil BMWPutih = new Mobil("Putih", 120, 4, 4);
+//        OBJEK OVERRIDE
+        Kendaraan avanzaOverride = new Kendaraan("Mobil", "Hitam", 60);
+        Mobil avanzaOverride2 = new Mobil("Hitam", 60, 4, 4);
 
+//        OVERLOADING
+        Kendaraan baracuda = new Kendaraan("Rantis", "Hitam", 80);
 
 //        System.out.println("Jenis mobil\t\t:" + mobil.jenis);
 //        System.out.println("Warna mobil\t\t:" + mobil.warna);
@@ -29,9 +34,18 @@ public class Main {
 //        mobil.majuKedepan();
 
 //        INHERITENCE
-        BMWPutih.info(); //SUPERCLASS
-        BMWPutih.nyalakanMesin(); //SUPERCLASS
-        BMWPutih.menjalankanRoda(); //SUBCLASS
-        BMWPutih.bukaPintu(); //SUBCLASS
+//        BMWPutih.info(); //SUPERCLASS
+//        BMWPutih.nyalakanMesin(); //SUPERCLASS
+//        BMWPutih.menjalankanRoda(); //SUBCLASS
+//        BMWPutih.bukaPintu();
+
+//        OVERRIDE
+//        avanzaOverride.majuKedepan();
+//        avanzaOverride2.majuKedepan();
+
+//        OVERLOADING
+        baracuda.majuKedepan();
+        baracuda.majuKedepan(100);
+        baracuda.majuKedepan(100, 10);
     }
 }
