@@ -1,6 +1,6 @@
 package org.example;
 
-public class Mobil extends Kendaraan{
+public class Mobil extends Kendaraan implements KendaliMesin{
     private int jmlPintu;
     private int jmlRoda;
 
@@ -23,4 +23,16 @@ public class Mobil extends Kendaraan{
     void majuKedepan(){
         System.out.println("Mobil melaju dengan kecepatan tinggi");
     }
+
+    @Override
+    public void nyalakanMesin() {
+        System.out.println("Mesin mobil dinyalakan");
+    }
+
+    @Override
+    public void matikanMesin() {
+        System.out.println("Mesin mobil dimatikan");
+    }
+
+
 }

@@ -4,15 +4,15 @@ public class Main {
             public static void main(String[] args) {
 
 //        BUAT OBJECT
-        Kendaraan mobil = new Kendaraan("Mobil", "Hitam", 80);
+        Mobil mobil = new Mobil("Mobil", 80, 4, 4);
 //        OBJEK DARI SUBCLASS
         Mobil BMWPutih = new Mobil("Putih", 120, 4, 4);
 //        OBJEK OVERRIDE
-        Kendaraan avanzaOverride = new Kendaraan("Mobil", "Hitam", 60);
+        Mobil avanzaOverride = new Mobil("Mobil", 80, 4, 4);
         Mobil avanzaOverride2 = new Mobil("Hitam", 60, 4, 4);
 
 //        OVERLOADING
-        Kendaraan baracuda = new Kendaraan("Rantis", "Hitam", 80);
+        Mobil baracuda = new Mobil("Hitam", 80, 6, 6);
 
 //        System.out.println("Jenis mobil\t\t:" + mobil.jenis);
 //        System.out.println("Warna mobil\t\t:" + mobil.warna);

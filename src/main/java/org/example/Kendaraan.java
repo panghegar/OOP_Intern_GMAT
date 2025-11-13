@@ -1,20 +1,20 @@
 package org.example;
 
-public class Kendaraan {
+public abstract class Kendaraan {
 
-//    ATRIBUTE
+    // ATRIBUT
     private String jenis;
     private String warna;
     private int kecepatan;
 
-//    KONSTRUKTOR
+    // KONSTRUKTOR
     public Kendaraan(String jenis, String warna, int kecepatan){
         this.jenis = jenis;
         this.warna = warna;
         this.kecepatan = kecepatan;
     }
 
-//    SETTER
+    // SETTER
     public void setJenis(String jenis){
         this.jenis = jenis;
     }
@@ -27,7 +27,7 @@ public class Kendaraan {
         this.kecepatan = kecepatan;
     }
 
-//    GETTER
+    // GETTER
     public String getJenis(){
         return jenis;
     }
@@ -35,15 +35,15 @@ public class Kendaraan {
     public String getWarna(){
         return warna;
     }
+
     public int getKecepatan(){
         return kecepatan;
     }
 
-//    METHOD
-    void nyalakanMesin(){
-        System.out.println("Menyalakan mesin");
-    }
+    // METHOD ABSTRACT
+    abstract void nyalakanMesin();
 
+    // METHOD BIASA
     void matikanMesin(){
         System.out.println("Mematikan mesin");
     }
@@ -51,7 +51,8 @@ public class Kendaraan {
     void majuKedepan(){
         System.out.println("Berjalan maju");
     }
-//  OVERLOADING
+
+    // OVERLOADING
     void majuKedepan(int jarak) {
         System.out.println(jenis + " maju sejauh " + jarak + " meter");
     }
@@ -62,8 +63,7 @@ public class Kendaraan {
 
     void info(){
         System.out.println("Jenis mobil\t\t:" + jenis);
-        System.out.println("Warna mobil\t\t:" +warna);
+        System.out.println("Warna mobil\t\t:" + warna);
         System.out.println("Kecepatan mobil\t:" + kecepatan + "\n");
     }
 }
-
